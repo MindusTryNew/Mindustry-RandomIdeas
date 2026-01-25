@@ -1,0 +1,19 @@
+{
+  "type": "Wall",
+  "health": 1080,
+  "size": 3,
+  "requirements": [
+    "lead/450"
+  ],
+  "category": "defense",
+  "displayName": "Lead Wall 3x3",
+  "outlineColor": "4A4A4AFF",
+  "squareSprite": true,
+  "research": {
+    "parent": "copper-wall",
+    "requirements": [
+      "copper/450",
+      "lead/450"
+    ]
+  }
+}
