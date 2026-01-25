@@ -1,0 +1,34 @@
+{
+  "type": "PowerTurret",
+  "size": 1,
+  "health": 800,
+  "reload": 20,
+  "range": 160,
+  "shootCone": 30,
+  "hasPower": true,
+  "consumes": {
+    "power": 0.9
+  },
+
+  "shootType": {
+    "type": "LightningBulletType",
+    "damage": 25,
+    "lightningLength": 160,
+    "lightningAngle": 60,
+    "bounce": 3,
+    "bounceRange": 80,
+    "frontColor": "00FFFF",
+    "backColor": "66FFFF",
+    "trailColor": "00FFFF",
+    "status": "shocked"
+  },
+
+  "requirements": [
+    "copper/150",
+    "lead/100",
+    "graphite/80"
+  ],
+
+  "category": "turret",
+  "research": "arcus"
+}
