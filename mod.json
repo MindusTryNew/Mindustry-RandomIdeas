@@ -1,0 +1,10 @@
+{
+  "name": "arcus-lightning-v1",
+  "displayName": "Arcus Lightning V1",
+  "author": "Zugi",
+  "description": "Eine Turret, die Lichtbögen wie Arcus schießt.",
+  "version": "1.0",
+  "minGameVersion": "154.3",
+  "dependencies": [],
+  "hidden": false
+}
