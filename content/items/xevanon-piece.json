@@ -1,0 +1,14 @@
+{
+  "type": "Item",
+  "name": "xevanon-piece",
+  "displayName": "Xevanon‑Stück",
+  "description": "Ein kleines Stück Xevanon. Dient als Rohmaterial.",
+  "color": "B9A8D0FF",
+  "cost": 1,
+  "flammability": 0.0,
+  "explosiveness": 0.0,
+  "radioactivity": 0.0,
+  "charge": 0.0,
+  "hardness": 0,
+  "lowPriority": false
+}

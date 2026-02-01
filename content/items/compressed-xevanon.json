@@ -1,0 +1,14 @@
+{
+  "type": "item",
+  "name": "compressed-xevanon",
+  "displayName": "Compressed Xevanon",
+  "description": "Verdichtetes Xevanon. Extrem energiereich, hochbrennbar und hochexplosiv.",
+
+  "color": "FF7A00FF",
+
+  "flammability": 1.2,
+  "explosiveness": 1.3,
+  "radioactivity": 0,
+
+  "cost": 1.0
+}

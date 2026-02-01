@@ -1,0 +1,14 @@
+{
+  "type": "item",
+  "name": "ultra-compressed-xevanon",
+  "displayName": "Ultra Compressed Xevanon",
+  "description": "Extrem verdichtetes Xevanon. Unvorstellbar energiereich und hochgradig instabil.",
+
+  "color": "FF2A00FF",
+
+  "flammability": 1.5,
+  "explosiveness": 1.6,
+  "radioactivity": 0.1,
+
+  "cost": 2.0
+}
