@@ -1,0 +1,14 @@
+{
+  "name": "xevanon",
+  "type": "item",
+
+  "color": "FF6A00",
+
+  "hardness": 4,
+  "cost": 2.5,
+
+  "flammability": 2.2,
+  "explosiveness": 2.8,
+  "radioactivity": 0.3,
+  "charge": 1.6
+}
