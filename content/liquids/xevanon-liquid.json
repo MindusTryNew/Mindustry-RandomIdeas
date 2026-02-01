@@ -1,0 +1,12 @@
+{
+  "type": "Liquid",
+  "name": "xevanon-liquid",
+  "displayName": "Xevanon Liquid",
+  "color": "FF6A00FF",
+  "heatCapacity": 0.9,
+  "flammability": 1.6,
+  "explosiveness": 1.8,
+  "viscosity": 0.7,
+  "temperature": 0.85,
+  "lightColor": "FF8C00AA"
+}
