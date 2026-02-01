@@ -1,0 +1,68 @@
+{
+  "type": "ItemTurret",
+  "size": 1,
+  "health": 260,
+  "category": "turret",
+  "displayName": "Mini Cannon",
+  "squareSprite": true,
+
+  "reload": 6,
+  "range": 110,
+  "rotateSpeed": 12,
+  "inaccuracy": 2,
+
+  "ammoTypes": {
+    "copper": {
+      "type": "BasicBulletType",
+      "speed": 4,
+      "damage": 1,
+      "lifetime": 28,
+      "width": 4,
+      "height": 6,
+      "frontColor": "FFD37FFF",
+      "backColor": "C2864BFF",
+      "hitEffect": "hitBulletSmall",
+      "despawnEffect": "none"
+    },
+
+    "lead": {
+      "type": "BasicBulletType",
+      "speed": 4,
+      "damage": 1,
+      "lifetime": 28,
+      "width": 4,
+      "height": 6,
+      "inaccuracy": 3,
+      "frontColor": "B9BAC6FF",
+      "backColor": "7F7F8EFF",
+      "hitEffect": "hitBulletSmall",
+      "despawnEffect": "none"
+    },
+
+    "coal": {
+      "type": "FlameBulletType",
+      "speed": 3.5,
+      "damage": 1,
+      "lifetime": 26,
+      "width": 4,
+      "height": 6,
+      "status": "burning",
+      "statusDuration": 120,
+      "frontColor": "FFAA44FF",
+      "backColor": "FF6A00FF",
+      "hitEffect": "hitFlameSmall",
+      "despawnEffect": "none"
+    }
+  },
+
+  "requirements": [
+    "copper/35"
+  ],
+
+  "research": {
+    "parent": "copper-sprayer",
+    "requirements": [
+      "copper/50"
+    ]
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-tri-turret",
+  "localizedName": "Xevanon Tri-Turret",
+  "size": 3,
+  "health": 3200,
+  "range": 320,
+  "reload": 1,
+  "continuous": true,
+  "shootWarmup": 0,
+  "minWarmup": 0.15,
+  "warmupSpeed": 0.012,
+  "cooldownTime": 150,
+  "shootCone": 5,
+  "rotateSpeed": 2,
+  "ammoPerShot": 1,
+  "shootShake": 6,
+  "recoil": 4,
+  "shootSound": "laserbig",
+
+  "consumes": {
+    "power": 7.8,
+    "liquid": {
+      "liquid": "xevanon-liquid",
+      "amount": 0.25,
+      "optional": true
+    }
+  },
+
+  "requirements": [
+    { "item": "lead", "amount": 4000 },
+    { "item": "titanium", "amount": 3000 },
+    { "item": "thorium", "amount": 1500 },
+    { "item": "xevanon", "amount": 2500 }
+  ],
+
+  "ammoTypes": {
+    "xevanon": {
+      "type": "LaserBulletType",
+      "damage": 6,
+      "lifetime": 60,
+      "length": 240,
+      "width": 5,
+      "widthScaling": 0.04,
+      "colors": ["FFB300FF","FF9100FF","FFFFFFFF"],
+      "status": "burning",
+      "statusDuration": 180
+    },
+    "compressed-xevanon": {
+      "type": "LaserBulletType",
+      "damage": 10,
+      "lifetime": 90,
+      "length": 280,
+      "width": 7,
+      "widthScaling": 0.05,
+      "colors": ["FF6F00FF","FF3D00FF","FFFFFFFF"],
+      "status": "melting",
+      "statusDuration": 240
+    },
+    "ultra-compressed-xevanon": {
+      "type": "LaserBulletType",
+      "damage": 16,
+      "lifetime": 120,
+      "length": 320,
+      "width": 9,
+      "widthScaling": 0.06,
+      "colors": ["FF1744FF","D50000FF","FFFFFFFF"],
+      "status": "electrified",
+      "statusDuration": 300
+    }
+  },
+
+  "category": "turret",
+  "research": {
+    "parent": "lancer",
+    "requirements": [
+      { "item": "lead", "amount": 12000 },
+      { "item": "titanium", "amount": 9000 },
+      { "item": "thorium", "amount": 4500 },
+      { "item": "xevanon", "amount": 7500 }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "TractorBeamTurret",
+  "name": "ground-tractor",
+
+  "localizedName": "Ground Tractor",
+  "description": "Zieht Bodeneinheiten an und hält sie fest.",
+
+  "size": 2,
+  "health": 720,
+
+  "range": 140,
+  "damage": 6,
+
+  "force": 0.6,
+  "scaledForce": 0.4,
+
+  "targetAir": false,
+  "targetGround": true,
+
+  "rotateSpeed": 5,
+
+  "beamWidth": 0.7,
+  "beamColor": "A6E3FFFF",
+
+  "shootSound": "tractor",
+
+  "hasPower": true,
+  "consumes": {
+    "power": 1.2
+  },
+
+  "requirements": [
+    { "item": "copper", "amount": 120 },
+    { "item": "lead", "amount": 100 },
+    { "item": "silicon", "amount": 60 }
+  ],
+
+  "category": "turret",
+  "research": {
+    "parent": "duo",
+    "requirements": [
+      { "item": "copper", "amount": 200 },
+      { "item": "lead", "amount": 150 }
+    ]
+  }
+}

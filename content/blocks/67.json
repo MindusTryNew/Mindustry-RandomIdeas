@@ -1,0 +1,43 @@
+{
+  "type": "ItemTurret",
+  "name": "sixtyseven-turret",
+  "localizedName": "67",
+  "description": "67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67 67",
+  "size": 2,
+  "health": 900,
+  "range": 167,
+  "reload": 402,
+  "shootShots": 2,
+  "inaccuracy": 1,
+  "recoil": 2,
+  "shootCone": 10,
+  "shootSound": "shootBig",
+  "ammoTypes": {
+    "copper": {
+      "type": "BasicBulletType",
+      "speed": 6.7,
+      "damage": 67,
+      "lifetime": 67,
+      "width": 7,
+      "height": 9,
+      "hitEffect": "hitBulletSmall",
+      "despawnEffect": "none",
+      "frontColor": "FFD37FFF",
+      "backColor": "C9A24CFF"
+    }
+  },
+  "requirements": [
+    { "item": "copper", "amount": 67 },
+    { "item": "lead", "amount": 67 },
+    { "item": "xevanon-piece", "amount": 67 }
+  ],
+  "category": "turret",
+  "research": {
+    "parent": "duo",
+    "requirements": [
+      { "item": "copper", "amount": 670 },
+      { "item": "lead", "amount": 670 },
+      { "item": "xevanon-piece", "amount": 67 }
+    ]
+  }
+}

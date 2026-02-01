@@ -1,0 +1,32 @@
+{
+  "type": "PowerTurret",
+  "name": "arcus-turret",
+  "localizedName": "Arcus",
+  "size": 1,
+  "health": 600,
+  "reload": 30,
+  "range": 120,
+  "shootCone": 20,
+  "hasPower": true,
+  "consumes": {
+    "power": 0.5
+  },
+  "shootType": {
+    "type": "LightningBulletType",
+    "damage": 20,
+    "lightningLength": 120,
+    "lightningAngle": 45
+  },
+  "requirements": [
+    { "item": "copper", "amount": 50 },
+    { "item": "lead", "amount": 30 }
+  ],
+  "category": "turret",
+  "research": {
+    "parent": "arcus",
+    "requirements": [
+      { "item": "copper", "amount": 150 },
+      { "item": "lead", "amount": 90 }
+    ]
+  }
+}

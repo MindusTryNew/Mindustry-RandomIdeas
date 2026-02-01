@@ -1,0 +1,47 @@
+{
+  "type": "PowerTurret",
+  "name": "beryllium-beam",
+  "localizedName": "Beryllium-Strahl",
+  "description": "Ein energiehungriges Erekir-Geschütz, das einen kontinuierlichen Strahl auf Feinde richtet.",
+
+  "size": 2,
+  "health": 480,
+  "range": 180,
+  "rotateSpeed": 5,
+  "shootCone": 6,
+
+  "hasPower": true,
+  "consumes": {
+    "power": 3.0
+  },
+
+  "shootType": {
+    "type": "ContinuousLaserBulletType",
+    "damage": 5.1667,
+    "length": 180,
+    "width": 2.5,
+
+    "colors": [
+      "ffe4a1",
+      "ffc266",
+      "ffffff"
+    ],
+
+    "hitEffect": "hitBulletSmall",
+    "despawnEffect": "none"
+  },
+
+  "requirements": [
+    { "item": "beryllium", "amount": 90 }
+  ],
+
+  "research": {
+    "parent": "beryllium-splitter-t3",
+    "requirements": [
+      { "item": "beryllium", "amount": 300 }
+    ]
+  },
+
+  "category": "turret",
+  "buildVisibility": "shown"
+}
