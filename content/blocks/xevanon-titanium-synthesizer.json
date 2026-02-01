@@ -36,7 +36,7 @@
   "category": "crafting",
 
   "research": {
-    "parent": "titanium-smelter",
+    "parent": "xevanon-factory",
     "requirements": [
       { "item": "lead", "amount": 900 },
       { "item": "silicon", "amount": 700 },
