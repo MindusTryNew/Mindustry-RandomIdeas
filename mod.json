@@ -1,0 +1,10 @@
+{
+  "name": "xevanon-mod",
+  "displayName": "Xevanon Mod",
+  "version": "1.0",
+  "author": "Zugi",
+  "description": "Ein kompletter eigenständiger Xevanon-Tech-Tree mit Fabriken, Generatoren und Turrets.",
+  "minGameVersion": 154.3
+  "dependencies": [],
+  "hidden": false
+}
