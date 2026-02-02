@@ -50,7 +50,7 @@
       "splashDamage": 10,
       "splashDamageRadius": 40,
 
-      "status": "slowed",
+      "status": "slow",
       "statusDuration": 120,
 
       "frontColor": "B39DDBFF",
