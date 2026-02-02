@@ -3,44 +3,45 @@
   "name": "ground-tractor",
 
   "localizedName": "Ground Tractor",
-  "description": "Zieht Bodeneinheiten an und hält sie fest.",
+  "description": "Zieht Bodeneinheiten an und verlangsamt sie stark. Effektiv zur Kontrolle, aber kein Ersatz für Schaden.",
 
   "size": 2,
-  "health": 720,
+  "health": 640,
 
-  "range": 140,
-  "damage": 6,
+  "range": 110,
+  "damage": 3,
 
-  "force": 0.6,
-  "scaledForce": 0.4,
+  "force": 0.35,
+  "scaledForce": 0.25,
 
   "targetAir": false,
   "targetGround": true,
 
-  "rotateSpeed": 5,
+  "rotateSpeed": 2.6,
 
-  "beamWidth": 0.7,
+  "beamWidth": 0.55,
   "beamColor": "A6E3FFFF",
 
   "shootSound": "tractor",
 
   "hasPower": true,
   "consumes": {
-    "power": 1.2
+    "power": 1.6
   },
 
   "requirements": [
-    { "item": "copper", "amount": 120 },
-    { "item": "lead", "amount": 100 },
-    { "item": "silicon", "amount": 60 }
+    { "item": "copper", "amount": 140 },
+    { "item": "lead", "amount": 120 },
+    { "item": "silicon", "amount": 80 }
   ],
 
   "category": "turret",
   "research": {
     "parent": "duo",
     "requirements": [
-      { "item": "copper", "amount": 200 },
-      { "item": "lead", "amount": 150 }
+      { "item": "copper", "amount": 300 },
+      { "item": "lead", "amount": 220 },
+      { "item": "silicon", "amount": 120 }
     ]
   }
 }
