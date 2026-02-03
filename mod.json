@@ -2,8 +2,8 @@
   "name": "xevanon-mod",
   "displayName": "Xevanon Mod",
   "version": "1.0",
-  "author": "Zugi",
-  "description": "Die Xevanon Mod bringt eine mächtige Late-Game-Ressource in Mindustry und erweitert das Spiel um einzigartige Turrets, Fabriken, Generatoren und Produktionsketten. Spieler können Xevanon abbauen und zu Xevanon-Stücken, Compressed Xevanon oder Ultra-Compressed Xevanon verarbeiten. Die Mod beinhaltet Turrets mit verschiedenen Munitionstypen, Effekten, zielsuchenden Projektile und Flächenschaden. Fabriken erlauben das Mischen, Komprimieren und Veredeln von Xevanon zu hochenergetischen Materialien, während Generatoren die Energieproduktion durch Xevanon-Liquid steigern. Alle Blöcke und Items sind Vanilla-kompatibel, sorgfältig ausbalanciert und bieten strategische Möglichkeiten im Spielverlauf. Die Mod wurde mit Unterstützung von ChatGPT entwickelt, Texturen wurden von den Mods Asthosus und Exogenesis inspiriert, einige Assets stammen aus Mindustry selbst. - Xevanon Mod introduces a powerful late-game resource to Mindustry, adding unique turrets, factories, generators, and production chains. Players can harvest Xevanon and process it into Xevanon Pieces, Compressed Xevanon, or Ultra-Compressed Xevanon. The mod features turrets with multiple ammo types, effects, target-seeking projectiles, and area damage. Factories allow mixing, compressing, and refining Xevanon into high-energy materials, while generators enhance power production using Xevanon Liquid. All blocks and items are designed to remain vanilla-compatible, carefully balanced, and provide strategic gameplay opportunities. This mod was created with the assistance of ChatGPT, textures were inspired by the Asthosus and Exogenesis mods, and some assets were adapted from Mindustry itself.",
+  "author": "--- <> ---",
+  "description": "Lade diese Mod nur über den neuesten Release auf GitHub herunter! - - - Download this mod on GitHub only via the latest release! ",
   "minGameVersion": 154.3
   "dependencies": [],
   "hidden": false
