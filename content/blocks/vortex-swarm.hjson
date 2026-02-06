@@ -1,0 +1,52 @@
+type: ItemTurret
+name: vortex-swarm
+localizedName: Vortex (Swarm Edition) 
+description: "Feuert extrem langsam fliegende Kupferprojektile in hoher Frequenz. Die Geschosse verfolgen Ziele aggressiv und bilden dichte Schwärme, die Gegner regelrecht einkreisen."
+category: turret
+size: 3
+health: 820
+range: 180
+
+reload: 3          # ~20 Schüsse pro Sekunde 😈
+inaccuracy: 0
+shootCone: 1
+recoil: 0.2
+rotateSpeed: 12
+
+ammoTypes: {
+  copper: {
+    type: BasicBulletType
+    damage: 4
+
+    speed: 0.5          # SEHR langsam
+    lifetime: 360        # bleibt lange in der Luft
+
+    width: 6
+    height: 8
+
+    homingPower: 3.25   # EXTREM stark
+    homingRange: 540
+    ammoMultiplier: 7
+
+    pierce: false
+    collidesAir: true
+    collidesGround: true
+
+    hitEffect: hitBulletSmall
+    shootEffect: shootSmall
+    despawnEffect: hitBulletSmall
+  }
+}
+
+requirements: [
+  copper/120
+  lead/90
+]
+
+research: {
+  parent: duo
+  requirements: [
+    copper/180
+    lead/150
+  ]
+  } 
