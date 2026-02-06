@@ -1,0 +1,57 @@
+type: ItemTurret
+name: alternating-copper-gun
+
+localizedName: Alternating Copper Gun
+description: Feuert Kupfergeschosse mit mehreren Projektiltypen pro Schuss.
+
+category: turret
+size: 2
+health: 1600
+
+range: 180
+reload: 30
+rotateSpeed: 6
+inaccuracy: 2
+recoil: 1.5
+
+requirements: [
+  copper/240
+  lead/160
+]
+
+ammoTypes: {
+  copper: {
+    type: MultiBulletType
+    bullets: [
+
+      {
+        type: BasicBulletType
+        damage: 6
+        speed: 9
+        lifetime: 35
+        width: 5
+        height: 7
+        homingPower: 1.05
+        homingRange: 120
+        shootEffect: shootSmall
+        hitEffect: hitBulletSmall
+      }
+
+      {
+        type: BasicBulletType
+        damage: 18
+        speed: 5
+        lifetime: 40
+        width: 8
+        height: 10
+        splashDamage: 8
+        splashDamageRadius: 10
+        homingPower: 1.95
+        homingRange: 120
+        shootEffect: shootBig
+        hitEffect: hitBulletBig
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-multi-status-turret",
+  "localizedName": "Xevanon Multi-Status Turret",
+  "description": "Trifft ein großes Projektil, erzeugt es FragBullets, die alle StatusEffekte verteilen.",
+  "category": "turret",
+
+  "size": 2,
+  "health": 1800,
+
+  "range": 200,
+  "reload": 60,
+  "rotateSpeed": 5,
+  "recoil": 1.5,
+  "inaccuracy": 0,
+
+  "maxAmmo": 100,
+
+  "consumes": {
+    "power": 3
+  },
+
+  "requirements": [
+    "copper/250",
+    "lead/200",
+    "graphite/150",
+    "xevanon/80"
+  ],
+
+  "research": {
+    "parent": "inferno-tower",
+    "requirements": [
+      "copper/500",
+      "lead/400",
+      "graphite/300",
+      "xevanon/200"
+    ]
+  },
+
+  "ammoTypes": {
+    "xevanon": {
+      "type": "BasicBulletType",
+      "damage": 40,
+      "speed": 5,
+      "lifetime": 35,
+
+      "width": 16,
+      "height": 16,
+
+      "splashDamage": 20,
+      "splashDamageRadius": 20,
+
+      "shootEffect": "shootBig",
+      "hitEffect": "massiveExplosion",
+      "despawnEffect": "massiveExplosion",
+
+      "fragBullets": 11,
+      "fragRandomSpread": 360,
+
+      "fragBullet": [
+        {"type":"BasicBulletType","status":"burning","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"freezing","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"unmoving","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"slow","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"wet","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"tarred","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"melting","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"sapped","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"overdrive","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"overclock","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"},
+        {"type":"BasicBulletType","status":"shielded","statusDuration":120,"damage":0,"speed":0,"lifetime":1,"hitEffect":"hitBulletSmall"}
+      ]
+    }
+  }
+}

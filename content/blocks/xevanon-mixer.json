@@ -1,0 +1,43 @@
+{
+  "type": "GenericCrafter",
+  "name": "xevanon-mixer",
+  "localizedName": "Xevanon Mixer",
+  "description": "Mischt Wasser mit Xevanon zu einer extrem instabilen Flüssigkeit.",
+  "size": 2,
+  "health": 260,
+
+  "hasPower": true,
+
+  "consumes": {
+    "power": 1.2,
+    "items": [
+      { "item": "xevanon", "amount": 1 }
+    ],
+    "liquids": [
+      { "liquid": "water", "amount": 0.5 }
+    ]
+  },
+
+  "outputLiquids": [
+    { "liquid": "xevanon-liquid", "amount": 0.5 }
+  ],
+
+  "craftTime": 90,
+  "liquidCapacity": 40,
+
+  "requirements": [
+    { "item": "copper", "amount": 120 },
+    { "item": "lead", "amount": 100 },
+    { "item": "silicon", "amount": 60 }
+  ],
+
+  "category": "crafting",
+  "research": {
+    "parent": "xevanon-factory",
+    "requirements": [
+      { "item": "copper", "amount": 360 },
+      { "item": "lead", "amount": 300 },
+      { "item": "silicon", "amount": 180 }
+    ]
+  }
+}

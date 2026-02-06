@@ -1,0 +1,66 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-50",
+  "localizedName": ">--|50|--<",
+  "description": "Ein schweres Jubiläumsgeschütz. Langsame, aber extrem zerstörerische Schüsse.",
+
+  "size": 5,
+  "health": 4200
+  "category": turret,
+
+  "range": 340,
+  "reload": 120,
+  "rotateSpeed": 2,
+  "recoil": 5,
+  "inaccuracy": 0,
+
+  "maxAmmo": 40,
+
+  "consumes": {
+    "power": 4
+  },
+
+  "shootSound": "artillery",
+
+  "requirements": [
+    "copper/600",
+    "lead/650",
+    "graphite/500",
+    "silicon/450",
+    "titanium/350",
+    "xevanon/200"
+  ],
+
+  "research": {
+    "parent": "inferno-tower",
+    "requirements": [
+      "copper/1000",
+      "lead/1000",
+      "graphite/800",
+      "silicon/700",
+      "titanium/600",
+      "xevanon/400"
+    ]
+  },
+
+  "ammoTypes": {
+    "xevanon": {
+      "type": "BasicBulletType",
+      "speed": 8,
+      "damage": 260,
+      "lifetime": 45,
+
+      "width": 14,
+      "height": 18,
+
+      "splashDamage": 80,
+      "splashDamageRadius": 30,
+
+      "shootEffect": "shootBig",
+      "hitEffect": "massiveExplosion",
+      "despawnEffect": "massiveExplosion",
+
+      "ammoMultiplier": 2
+    }
+  }
+}

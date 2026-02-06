@@ -1,0 +1,66 @@
+{
+  "type": "ItemTurret",
+  "name": "longburst-cannon",
+  "localizedName": "Longburst Cannon",
+  "description": "Feuert eine Salve aus 8 extrem weit fliegenden Geschossen mit riesigem Explosionsradius. Niedriger Schaden, aber massive Flächenkontrolle.",
+
+  "size": 3,
+  "health": 2600,
+  "range": 520,
+
+  "reload": 240,
+  "rotateSpeed": 1.5,
+  "inaccuracy": 6,
+  "recoil": 3,
+
+  "shoot": {
+    "shots": 8,
+    "shotDelay": 4
+  },
+
+  "shootSound": "artillery",
+
+  "ammoTypes": {
+    "graphite": {
+      "type": "BasicBulletType",
+      "speed": 6,
+      "lifetime": 90,
+
+      "damage": 10,
+
+      "width": 10,
+      "height": 10,
+
+      "splashDamage": 10,
+      "splashDamageRadius": 1000,
+
+      "hitEffect": "massiveExplosion",
+      "despawnEffect": "massiveExplosion",
+
+      "knockback": 1.2
+    }
+  },
+
+  "itemCapacity": 20,
+
+  "requirements": [
+    { "item": "copper", "amount": 350 },
+    { "item": "lead", "amount": 450 },
+    { "item": "graphite", "amount": 300 },
+    { "item": "silicon", "amount": 250 },
+    { "item": "titanium", "amount": 200 }
+  ],
+
+  "research": {
+    "parent": "longreach-annihilator",
+    "requirements": [
+      { "item": "copper", "amount": 600 },
+      { "item": "lead", "amount": 650 },
+      { "item": "graphite", "amount": 500 },
+      { "item": "silicon", "amount": 450 },
+      { "item": "titanium", "amount": 400 }
+    ]
+  },
+
+  "category": "turret"
+}

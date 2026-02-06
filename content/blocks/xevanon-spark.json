@@ -1,0 +1,54 @@
+{
+  "type": "PowerTurret",
+  "name": "xevanon-spark",
+  "localizedName": "Xevanon Spark / X2T1E",
+  "description": "Ein früher Xevanon-Prototyp. Feuert schnelle Energieblitze. Geringer Schaden, aber hohe Feuerrate. Benötigt nur Strom.",
+
+  "size": 3,
+  "health": 420,
+  "range": 140,
+
+  "reload": 8,
+  "rotateSpeed": 6,
+  "inaccuracy": 4,
+  "shootCone": 8,
+  "recoil": 0.5,
+
+  "shootType": {
+    "type": "BasicBulletType",
+    "damage": 12,
+    "speed": 8,
+    "lifetime": 30,
+    "width": 3,
+    "height": 5,
+
+    "shootEffect": "shootSmall",
+    "hitEffect": "hitBulletSmall",
+    "despawnEffect": "none",
+
+    "frontColor": "B999FFFF",
+    "backColor": "6A2BFFFF"
+  },
+
+  "consumes": {
+    "power": 3
+  },
+
+  "requirements": [
+    { "item": "copper", "amount": 35 },
+    { "item": "lead", "amount": 25 },
+    { "item": "xevanon-piece", "amount": 10 }
+  ],
+
+  "category": "turret",
+
+  "research": {
+    "parent": "duo",
+    "requirements": [
+      { "item": "copper", "amount": 80 },
+      { "item": "lead", "amount": 60 }
+    ]
+  },
+
+  "buildVisibility": "shown"
+}

@@ -1,0 +1,41 @@
+{
+  "type": "GenericCrafter",
+  "name": "sand-cracker",
+  "localizedName": "Sand Cracker",
+  "description": "Zerkleinert Kupfer, Blei oder Schrott zu Sand. Schnell und vielseitig.",
+
+  "size": 3,
+  "health": 450,
+
+  "craftTime": 30,  // 0,5 Sekunden = 30 ticks (1 tick = 1/60s)
+  "hasPower": true,
+
+  "consumes": {
+    "power": 4.0,
+    "items": [
+      { "item": "copper", "amount": 1 },
+      { "item": "lead", "amount": 1 }
+    ]
+  },
+
+  "outputItems": [
+    { "item": "sand", "amount": 4 }
+  ],
+
+  "requirements": [
+    { "item": "copper", "amount": 100 },
+    { "item": "lead", "amount": 80 },
+    { "item": "graphite", "amount": 60 }
+  ],
+
+  "category": "crafting",
+
+  "research": {
+    "parent": "silicon-smelter",
+    "requirements": [
+      { "item": "copper", "amount": 300 },
+      { "item": "lead", "amount": 200 },
+      { "item": "graphite", "amount": 150 }
+    ]
+  }
+}

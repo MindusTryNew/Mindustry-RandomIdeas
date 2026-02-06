@@ -1,0 +1,52 @@
+{
+  "type": "ItemTurret",
+  "name": "beryllium-splitter-t2",
+  "localizedName": "Beryllium Splitter T2",
+  "description": "Verbesserte Beryllium-Splitter-Turret. Mittlere Reichweite, höhere Schussrate, Splitter beim Treffer.",
+
+  "size": 3,
+  "health": 1800,
+
+  "range": 280,
+  "reload": 10,
+  "rotateSpeed": 5,
+
+  "itemCapacity": 30,
+
+  "ammoTypes": {
+    "beryllium": {
+      "type": "BasicBulletType",
+      "damage": 40,
+      "speed": 8,
+      "lifetime": 55,
+      "pierce": true,
+      "pierceCap": 2,
+      "fragOnHit": true,
+      "fragBullets": 4,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 10,
+        "speed": 5,
+        "lifetime": 25
+      },
+      "hitEffect": "blastExplosion",
+      "shootEffect": "shootSmall"
+    }
+  },
+
+  "requirements": [
+    "beryllium/120",
+    "tungsten/60",
+    "silicon/80"
+  ],
+
+  "category": "turret",
+  "research": {
+    "parent": "beryllium-splitter",
+    "requirements": [
+      "beryllium/400",
+      "tungsten/200",
+      "silicon/250"
+    ]
+  }
+}

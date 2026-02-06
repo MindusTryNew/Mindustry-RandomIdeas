@@ -1,0 +1,96 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-tri-turret-mk2",
+  "localizedName": "Xevanon Tri-Turret MK II",
+  "description": "Verbesserte Version des Tri-Turrets. Stabilere Xevanon-Fokussierung, höhere Reichweite und deutlich gesteigerte Feuerkraft.",
+
+  "size": 4,
+  "health": 5200,
+
+  "range": 380,
+  "reload": 1,
+  "continuous": true,
+
+  "shootWarmup": 0,
+  "minWarmup": 0.1,
+  "warmupSpeed": 0.02,
+  "cooldownTime": 200,
+
+  "shootCone": 4,
+  "rotateSpeed": 1.8,
+
+  "ammoPerShot": 1,
+  "shootShake": 8,
+  "recoil": 5,
+
+  "shootSound": "laserbig",
+
+  "consumes": {
+    "power": 12.5,
+    "liquid": {
+      "liquid": "xevanon-liquid",
+      "amount": 0.4,
+      "optional": true
+    }
+  },
+
+  "requirements": [
+    { "item": "lead", "amount": 9000 },
+    { "item": "titanium", "amount": 6500 },
+    { "item": "thorium", "amount": 3200 },
+    { "item": "xevanon", "amount": 5000 },
+    { "item": "ultra-compressed-xevanon", "amount": 250 }
+  ],
+
+  "ammoTypes": {
+
+    "xevanon": {
+      "type": "LaserBulletType",
+      "damage": 9,
+      "lifetime": 80,
+      "length": 280,
+      "width": 6,
+      "widthScaling": 0.045,
+      "colors": ["FFC400FF", "FF9100FF", "FFFFFFFF"],
+      "status": "burning",
+      "statusDuration": 240
+    },
+
+    "compressed-xevanon": {
+      "type": "LaserBulletType",
+      "damage": 14,
+      "lifetime": 110,
+      "length": 330,
+      "width": 8,
+      "widthScaling": 0.055,
+      "colors": ["FF6D00FF", "FF3D00FF", "FFFFFFFF"],
+      "status": "melting",
+      "statusDuration": 300
+    },
+
+    "ultra-compressed-xevanon": {
+      "type": "LaserBulletType",
+      "damage": 22,
+      "lifetime": 150,
+      "length": 380,
+      "width": 11,
+      "widthScaling": 0.065,
+      "colors": ["FF1744FF", "B71C1CFF", "FFFFFFFF"],
+      "status": "electrified",
+      "statusDuration": 420
+    }
+
+  },
+
+  "category": "turret",
+
+  "research": {
+    "parent": "xevanon-tri-turret",
+    "requirements": [
+      { "item": "lead", "amount": 18000 },
+      { "item": "titanium", "amount": 14000 },
+      { "item": "thorium", "amount": 7000 },
+      { "item": "xevanon", "amount": 12000 }
+    ]
+  }
+}

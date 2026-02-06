@@ -1,0 +1,51 @@
+{
+  "type": "PowerTurret",
+  "name": "focused-beam",
+  "localizedName": "Fokus-Strahler",
+  "description": "Ein präzises Strahlgeschütz, das konstanten Energieschaden verursacht.",
+
+  "size": 2,
+  "health": 1520,
+  "range": 190,
+  "rotateSpeed": 4.5,
+  "shootCone": 6,
+
+  "hasPower": true,
+  "consumes": {
+    "power": 2.6
+  },
+
+  "shootType": {
+    "type": "ContinuousLaserBulletType",
+    "damage": 3.1667,
+    "length": 190,
+    "width": 2.8,
+
+    "colors": [
+      "ff9c6a",
+      "ff6a3d",
+      "ffffff"
+    ],
+
+    "hitEffect": "hitBulletSmall",
+    "despawnEffect": "none"
+  },
+
+  "requirements": [
+    { "item": "copper", "amount": 120 },
+    { "item": "lead", "amount": 100 },
+    { "item": "silicon", "amount": 80 }
+  ],
+
+  "research": {
+    "parent": "lancer",
+    "requirements": [
+      { "item": "copper", "amount": 600 },
+      { "item": "lead", "amount": 450 },
+      { "item": "silicon", "amount": 350 }
+    ]
+  },
+
+  "category": "turret",
+  "buildVisibility": "shown"
+}

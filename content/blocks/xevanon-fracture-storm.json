@@ -1,0 +1,113 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-fragment-storm",
+  "localizedName": "Xevanon Fragment Storm",
+  "description": "Ein extrem langsames Xevanon-Geschütz. Ein einziger Schuss zerlegt sich in hunderte Splitter. Verursacht massiven Flächenschaden – und möglicherweise massiven FPS-Schaden.",
+
+  "size": 5,
+  "health": 5200,
+  "range": 360,
+
+  "reload": 180,
+  "rotateSpeed": 2,
+  "inaccuracy": 0,
+  "recoil": 6,
+
+  "shootSound": "shootBig",
+
+  "ammoTypes": {
+    "xevanon": {
+      "type": "BasicBulletType",
+      "damage": 6500,
+      "speed": 5,
+      "lifetime": 70,
+      "width": 18,
+      "height": 18,
+
+      "hitEffect": "massiveExplosion",
+      "despawnEffect": "none",
+
+      "fragBullets": 5,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 2000,
+        "speed": 4,
+        "lifetime": 40,
+        "width": 12,
+        "height": 12,
+
+        "fragBullets": 3,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "damage": 900,
+          "speed": 4,
+          "lifetime": 30,
+          "width": 10,
+          "height": 10,
+
+          "fragBullets": 2,
+          "fragBullet": {
+            "type": "BasicBulletType",
+            "damage": 500,
+            "speed": 4,
+            "lifetime": 24,
+            "width": 8,
+            "height": 8,
+
+            "fragBullets": 8,
+            "fragBullet": {
+              "type": "BasicBulletType",
+              "damage": 250,
+              "speed": 4,
+              "lifetime": 18,
+              "width": 6,
+              "height": 6,
+
+              "fragBullets": 2,
+              "fragBullet": {
+                "type": "BasicBulletType",
+                "damage": 120,
+                "speed": 4,
+                "lifetime": 14,
+                "width": 5,
+                "height": 5,
+
+                "fragBullets": 2,
+                "fragBullet": {
+                  "type": "BasicBulletType",
+                  "damage": 60,
+                  "speed": 4,
+                  "lifetime": 10,
+                  "width": 4,
+                  "height": 4,
+                  "hitEffect": "hitBulletSmall"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+
+  "itemCapacity": 10,
+
+  "requirements": [
+    { "item": "xevanon", "amount": 1200 },
+    { "item": "thorium", "amount": 800 },
+    { "item": "surge-alloy", "amount": 600 },
+    { "item": "phase-fabric", "amount": 450 }
+  ],
+
+  "research": {
+    "parent": "foreshadow",
+    "requirements": [
+      { "item": "xevanon", "amount": 2500 },
+      { "item": "surge-alloy", "amount": 1500 },
+      { "item": "phase-fabric", "amount": 900 }
+    ]
+  },
+
+  "category": "turret",
+  "buildVisibility": "shown"
+}

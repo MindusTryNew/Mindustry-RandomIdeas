@@ -1,0 +1,100 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-flame-thrower",
+  "localizedName": "Xevanon Flame Thrower",
+  "description": "Verschießt brennbare Materialien und setzt Gegner in Brand. Feuer fliegt nur bis zur Turret-Reichweite.",
+
+  "size": 3,
+  "health": 1600,
+  "range": 120,
+
+  "reload": 8,
+  "ammoPerShot": 1,
+  "rotateSpeed": 5,
+  "inaccuracy": 3,
+  "shootCone": 5,
+  "recoil": 1.5,
+  "itemCapacity": 120,
+
+  "ammoTypes": {
+    "coal": {
+      "type": "FireBulletType",
+      "damage": 25,
+      "speed": 10,
+      "lifetime": 12,
+      "width": 6,
+      "height": 6,
+      "colorFrom": "ffdd55ff",
+      "colorMid": "db401cff",
+      "colorTo": "7f7f7fff",
+      "velMin": 8,
+      "velMax": 10,
+      "fireTrailChance": 0.2,
+      "trailEffect2": "fire",
+      "fireEffectChance": 0.3,
+      "fireEffectChance2": 0.2,
+      "collidesTiles": false,
+      "collidesTeam": false
+    },
+    "pyratite": {
+      "type": "FireBulletType",
+      "damage": 50,
+      "speed": 10,
+      "lifetime": 12,
+      "width": 6,
+      "height": 6,
+      "colorFrom": "ff4422ff",
+      "colorMid": "cc2200ff",
+      "colorTo": "7f0000ff",
+      "velMin": 9,
+      "velMax": 11,
+      "fireTrailChance": 0.4,
+      "trailEffect2": "fire",
+      "fireEffectChance": 0.5,
+      "fireEffectChance2": 0.3,
+      "collidesTiles": false,
+      "collidesTeam": false
+    },
+    "blast-compound": {
+      "type": "FireBulletType",
+      "damage": 80,
+      "speed": 10,
+      "lifetime": 12,
+      "width": 8,
+      "height": 8,
+      "colorFrom": "ff0000ff",
+      "colorMid": "aa0000ff",
+      "colorTo": "550000ff",
+      "velMin": 10,
+      "velMax": 12,
+      "fireTrailChance": 0.5,
+      "trailEffect2": "fire",
+      "fireEffectChance": 0.6,
+      "fireEffectChance2": 0.4,
+      "collidesTiles": false,
+      "collidesTeam": false
+    }
+  },
+
+  "consumes": {
+    "power": 6
+  },
+
+  "requirements": [
+    { "item": "titanium", "amount": 180 },
+    { "item": "copper", "amount": 120 },
+    { "item": "graphite", "amount": 100 }
+  ],
+
+  "category": "turret",
+
+  "research": {
+    "parent": "copper-sprayer",
+    "requirements": [
+      { "item": "titanium", "amount": 300 },
+      { "item": "graphite", "amount": 200 }
+    ]
+  },
+
+  "buildVisibility": "shown"
+}

@@ -1,0 +1,60 @@
+{
+  "type": "ItemTurret",
+  "name": "xevanon-pulse-t5",
+  "localizedName": "Xevanon Pulse T5 / X3T5",
+  "description": "Eine kompakte Xevanon-Schnellfeuerkanone. Feuert energiereiche Pulse mit hoher Kadenz auf mittlere Distanz.",
+
+  "size": 3,
+  "health": 1400,
+  "range": 190,
+
+  "reload": 12,
+  "ammoPerShot": 1,
+  "rotateSpeed": 4,
+  "inaccuracy": 2,
+  "shootCone": 6,
+  "recoil": 1.5,
+
+  "ammoTypes": {
+    "xevanon-piece": {
+      "type": "BasicBulletType",
+      "damage": 35,
+      "speed": 7,
+      "lifetime": 55,
+      "width": 6,
+      "height": 8,
+
+      "shootEffect": "shootSmall",
+      "hitEffect": "hitBulletBig",
+      "despawnEffect": "none",
+
+      "frontColor": "C86BFFFF",
+      "backColor": "6F2BFFFF"
+    }
+  },
+
+  "itemCapacity": 180,
+
+  "consumes": {
+    "power": 1
+  },
+
+  "requirements": [
+    { "item": "copper", "amount": 120 },
+    { "item": "titanium", "amount": 80 },
+    { "item": "xevanon-piece", "amount": 60 }
+  ],
+
+  "category": "turret",
+
+  "research": {
+    "parent": "lancer",
+    "requirements": [
+      { "item": "copper", "amount": 250 },
+      { "item": "titanium", "amount": 180 },
+      { "item": "xevanon-piece", "amount": 120 }
+    ]
+  },
+
+  "buildVisibility": "shown"
+}

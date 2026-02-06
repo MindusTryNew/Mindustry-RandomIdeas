@@ -1,0 +1,56 @@
+{
+  "type": "ItemTurret",
+  "name": "titan-minigun",
+  "localizedName": "Titan-Minikanone",
+  "description": "Ein extrem schnelles Geschütz. Verschießt mit Titan betriebene Mikrokugeln in Dauerfeuer.",
+
+  "size": 2,
+  "health": 1200,
+
+  "range": 170,
+  "reload": 3,
+  "rotateSpeed": 10,
+  "recoil": 0.6,
+  "inaccuracy": 3,
+
+  "maxAmmo": 300,
+
+  "consumes": {
+    "power": 2.5
+  },
+
+  "requirements": [
+    "copper/160",
+    "lead/180",
+    "graphite/120",
+    "titanium/90"
+  ],
+
+  "research": {
+    "parent": "inferno-tower",
+    "requirements": [
+      "copper/350",
+      "lead/400",
+      "graphite/260",
+      "titanium/200"
+    ]
+  },
+
+  "ammoTypes": {
+    "titanium": {
+      "type": "BasicBulletType",
+      "speed": 7,
+      "damage": 15,
+      "lifetime": 25,
+
+      "width": 4,
+      "height": 6,
+
+      "shootEffect": "shootSmall",
+      "hitEffect": "hitBulletSmall",
+      "despawnEffect": "none",
+
+      "ammoMultiplier": 100
+    }
+  }
+}

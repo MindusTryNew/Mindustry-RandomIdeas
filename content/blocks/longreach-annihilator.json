@@ -1,0 +1,57 @@
+{
+  "type": "ItemTurret",
+  "name": "longreach-annihilator",
+  "localizedName": "Longreach Annihilator",
+  "description": "Ein extremes Langstreckengeschütz, das enorme Energiemengen in einen einzigen Schuss bündelt.",
+
+  "size": 4,
+  "health": 4200,
+
+  "range": 1200,
+  "reload": 40,
+  "rotateSpeed": 0.8,
+  "shootCone": 2,
+  "recoil": 6,
+
+  "hasPower": true,
+
+  "consumes": {
+    "power": 100.5
+  },
+
+  "shootSound": "shootBig",
+
+  "ammoTypes": {
+    "titanium": {
+      "type": "BasicBulletType",
+      "speed": 6.5,
+      "damage": 220,
+      "lifetime": 160,
+      "width": 10,
+      "height": 14,
+      "pierce": true,
+      "knockback": 4,
+      "hitEffect": "hitBulletBig",
+      "despawnEffect": "none",
+      "frontColor": "FFD37FFF",
+      "backColor": "C9A24CFF"
+    }
+  },
+
+  "requirements": [
+    "copper/5000",
+    "titanium/2000",
+    "graphite/300"
+  ],
+
+  "category": "turret",
+
+  "research": {
+    "parent": "duo",
+    "requirements": [
+      { "item": "copper", "amount": 12000 },
+      { "item": "titanium", "amount": 5000 },
+      { "item": "graphite", "amount": 2000 }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "type": "GenericCrafter",
+  "name": "xevanon-titanium-synthesizer",
+  "displayName": "Xevanon Titanium Synthesizer",
+  "description": "Nutzt Xevanon als Katalysator, um Blei und Sand direkt zu Titan zu verschmelzen.",
+
+  "size": 3,
+  "health": 460,
+
+  "hasPower": true,
+
+  "consumes": {
+    "power": 1.6,
+    "items": [
+      { "item": "sand", "amount": 6 },
+      { "item": "lead", "amount": 4 },
+      { "item": "xevanon", "amount": 1 }
+    ]
+  },
+
+  "outputItem": {
+    "item": "titanium",
+    "amount": 2
+  },
+
+  "craftTime": 90,
+  "itemCapacity": 40,
+
+  "requirements": [
+    { "item": "copper", "amount": 260 },
+    { "item": "lead", "amount": 220 },
+    { "item": "silicon", "amount": 160 },
+    { "item": "xevanon", "amount": 80 }
+  ],
+
+  "category": "crafting",
+
+  "research": {
+    "parent": "xevanon-factory",
+    "requirements": [
+      { "item": "lead", "amount": 900 },
+      { "item": "silicon", "amount": 700 },
+      { "item": "xevanon", "amount": 500 }
+    ]
+  }
+}

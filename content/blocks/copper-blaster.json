@@ -1,0 +1,72 @@
+{
+  "type": "ItemTurret",
+  "name": "copper-blaster",
+  "localizedName": "Copper Blaster",
+  "description": "Feuert Kupfer extrem schnell ab. Jeder Kupferball liefert viele Schüsse. Schaden ist gering.",
+
+  "size": 2,
+  "health": 450,
+  "range": 140,
+
+  "reload": 3,
+  "ammoPerShot": 1,
+  "rotateSpeed": 5,
+  "inaccuracy": 3,
+  "shootCone": 5,
+  "recoil": 1,
+
+  "ammoTypes": {
+
+    "copper": {
+      "type": "BasicBulletType",
+      "damage": 2,
+      "speed": 5,
+      "lifetime": 45,
+      "width": 4,
+      "height": 6,
+      "pierce": false,
+      "ammoMultiplier": 4,
+      "shootEffect": "shootSmall",
+      "hitEffect": "hitBulletSmall",
+      "despawnEffect": "none",
+      "frontColor": "FFD37FFF",
+      "backColor": "C9A24CFF"
+    },
+
+    "lead": {
+      "type": "BasicBulletType",
+      "damage": 5,
+      "speed": 8,
+      "lifetime": 45,
+      "width": 4,
+      "height": 6,
+      "pierce": false,
+      "ammoMultiplier": 3,
+      "shootEffect": "shootSmall",
+      "hitEffect": "hitBulletSmall",
+      "despawnEffect": "none",
+      "frontColor": "FFD37FFF",
+      "backColor": "C9A24CFF"
+    }
+
+  },
+
+  "itemCapacity": 50,
+
+  "requirements": [
+    { "item": "copper", "amount": 75 },
+    { "item": "lead", "amount": 100 }
+  ],
+
+  "category": "turret",
+
+  "research": {
+    "parent": duo",
+    "requirements": [
+      { "item": "copper", "amount": 400 },
+      { "item": "lead", "amount": 500 }
+    ]
+  },
+
+  "buildVisibility": "shown"
+}

@@ -1,0 +1,118 @@
+{
+  "type": "ItemTurret",
+  "name": "multi-splitter-turret",
+  "localizedName": "Multi‑Splitter Turret",
+  "description": "Feuert ein großes Projektil ab, das in viele zielsuchende Splitter zerfällt. Verschiedene Munitionseffekte.",
+  
+  "size": 2,
+  "health": 1200,
+  "range": 120,
+  
+  "reload": 120,
+  "rotateSpeed": 2,
+  "inaccuracy": 5,
+  "recoil": 2,
+  "shootSound": "shoot",
+  
+  "ammoTypes": {
+    
+    "lead": {
+      "type": "BasicBulletType",
+      "damage": 24,
+      "speed": 6,
+      "lifetime": 60,
+      "width": 8,
+      "height": 8,
+      "hitEffect": "hitBulletBig",
+      "fragBullets": 20,
+      "fragRandomSpread": 360,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 4,
+        "speed": 5,
+        "lifetime": 40,
+        "homingPower": 0.9,
+        "homingRange": 80,
+        "width": 4,
+        "height": 4,
+        "splashDamage": 2,
+        "splashDamageRadius": 30,
+        "hitEffect": "hitBulletSmall"
+      }
+    },
+    
+    "silicon": {
+      "type": "BasicBulletType",
+      "damage": 20,
+      "speed": 6,
+      "lifetime": 60,
+      "width": 8,
+      "height": 8,
+      "hitEffect": "hitBulletBig",
+      "fragBullets": 25,
+      "fragRandomSpread": 360,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 5,
+        "speed": 8,
+        "lifetime": 140,
+        "homingPower": 1.5,
+        "homingRange": 160,
+        "width": 4,
+        "height": 4,
+        "splashDamage": 3,
+        "splashDamageRadius": 60,
+        "hitEffect": "hitBulletSmall"
+      }
+    },
+    
+    "titanium": {
+      "type": "BasicBulletType",
+      "damage": 23,
+      "speed": 6,
+      "lifetime": 60,
+      "width": 8,
+      "height": 8,
+      "hitEffect": "hitBulletBig",
+      "status": "slow",
+      "statusDuration": 180,
+      "fragBullets": 38,
+      "fragRandomSpread": 360,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "damage": 4,
+        "speed": 17,
+        "lifetime": 340,
+        "homingPower": 2.3,
+        "homingRange": 210,
+        "width": 4,
+        "height": 4,
+        "splashDamage": 2,
+        "splashDamageRadius": 100,
+        "hitEffect": "hitBulletSmall"
+      }
+    }
+    
+  },
+  
+  "itemCapacity": 10,
+  
+  "requirements": [
+    { "item": "copper", "amount": 200 },
+    { "item": "lead", "amount": 300 },
+    { "item": "graphite", "amount": 100 },
+    { "item": "silicon", "amount": 70 }
+  ],
+  
+  "research": {
+    "parent": "inferno-tower",
+    "requirements": [
+      { "item": "copper", "amount": 380 },
+      { "item": "lead", "amount": 400 },
+      { "item": "graphite", "amount": 600 },
+      { "item": "silicon", "amount": 550 }
+    ]
+  },
+  
+  "category": "turret"
+}

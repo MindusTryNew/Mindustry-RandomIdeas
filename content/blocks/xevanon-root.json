@@ -1,0 +1,19 @@
+{
+  "type": "Block",
+  "name": "xevanon-root",
+  "displayName": "Xevanon Root",
+  "description": "Ein neutraler Dummy, der den Xevanon-Tech‑Zweig entspringen lässt.",
+  "size": 1,
+  "health": 1,
+  "category": "effect",
+  "buildVisibility": "hidden",
+  "requirements": [
+    { "item": "copper", "amount": 10 }
+  ],
+  "research": {
+    "parent": "core-shard",
+    "requirements": [
+      { "item": "copper", "amount": 10 }
+    ]
+  }
+}

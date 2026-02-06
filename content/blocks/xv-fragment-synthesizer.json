@@ -1,0 +1,51 @@
+{
+  "type": "GenericCrafter",
+  "name": "xv-fragment-synthesizer",
+  "displayName": "XV-Fragment Synthesizer",
+  "description": "Eine extrem aufwendige Anlage zur künstlichen Erzeugung von XV-Fragmenten.",
+
+  "size": 4,
+  "health": 720,
+
+  "hasPower": true,
+
+  "craftTime": 480,
+
+  "outputItem": {
+    "item": "xv-fragment",
+    "amount": 1
+  },
+
+  "consumes": {
+    "power": 8.0,
+    "items": [
+      { "item": "silicon", "amount": 50 },
+      { "item": "coal", "amount": 600 },
+      { "item": "xevanon", "amount": 25 },
+      { "item": "graphite", "amount": 200 }
+    ]
+  },
+
+  "itemCapacity": 30,
+
+  "requirements": [
+    "copper/1225",
+    "lead/800",
+    "xevanon/300",
+    "compressed-xevanon/100",
+    "silicon/500"
+  ],
+
+  "category": "crafting",
+
+  "research": {
+    "parent": "xevanon-factory-mk2",
+    "requirements": [
+      "copper/6000",
+      "lead/4000",
+      "compressed-xevanon/500",
+      "silicon/3000",
+      "graphite/5000"
+    ]
+  }
+}
