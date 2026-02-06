@@ -1,7 +1,0 @@
-{
-  "type": "ore",
-  "name": "ore-xv-fragment",
-  "itemDrop": "xv-fragment",
-  "tier": 1,
-  "oreDefault": true
-}
